@@ -1,0 +1,134 @@
+.menu-button {
+	display:none;
+	background-color:#000;
+	color:#fff;
+	float:right;
+	text-align:center;
+	padding:5px 12px;
+	cursor:pointer;
+	font-size:23px;
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+.menu-button .touch-button {
+	display:none;
+}
+.flexnav .touch-button {
+	position:absolute;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+	font-size:18px;
+	color:#fff;
+}
+.flexnav ul .touch-button {
+	top:50%;
+	margin-top:-13px;
+	right:7px;
+}
+.flexnav {
+	text-align:center;
+	clear:both;
+}
+.flexnav li {
+	position:relative;
+}
+.flexnav > li {
+	display:inline-block;
+	margin:0 10px 0 35px;
+	padding:0 25px 0 0;
+}
+.flexnav li a {
+	font-size:14px;
+	text-decoration:none;
+	color:#fff;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-family: "Montserrat",sans-serif;
+}
+.flexnav li a:hover {
+	color:#000;
+}
+.flexnav ul {
+	text-align:left;
+}
+.flexnav li ul a {
+	color:#fff;
+}
+.flexnav li ul {
+	position:absolute;
+	width:180px;
+}
+.flexnav > li > ul {
+	top:100%;
+	left:0px;
+	background-color:#20a664;
+}
+.flexnav li a {
+	display:inline-block;
+}
+.flexnav > li > ul > li > a {
+	padding:10px 15px;
+}
+.flexnav > li > ul > li > ul {
+	top:0px;
+	left:100%;
+	background-color:#cc8801;
+}
+.flexnav > li > ul > li > ul > li > a {
+	padding:10px 15px;
+}
+.flexnav.sm-screen > li {
+	float:none;
+	margin:0;
+	padding:10px 0px;
+	display:block;
+}
+.flexnav.sm-screen li ul {
+	position:static;
+	width:100%;
+}
+.flexnav.sm-screen .touch-button {
+	background-color:#ccc;
+	display:inline-block;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	color:#181818;
+}
+.flexnav.sm-screen {
+	max-height:0px;
+	opacity:0;
+	visibility:hidden;
+	
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+.flexnav.sm-screen.flexnav-show {
+	max-height:10000px;
+	opacity:1;
+	visibility:visible;
+}
+
+
+@media screen and (max-width:767px) {
+	.menu-button {
+		display:inline-block;
+	}
+	.flexnav {
+		border-top: 3px solid #000000;
+		float:left;
+		width:100%;
+	}
+	.flexnav.flexnav-show {
+		margin-top:10px;
+	}
+}
